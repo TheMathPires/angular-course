@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import ptBr from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { FormsModule } from '@angular/forms'
 
 registerLocaleData(ptBr)
 
@@ -22,6 +23,8 @@ import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 
 //pipe
 import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
+import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
+import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,16 @@ import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
     OfertaComponent,
     ComoUsarComponent,
     OndeFicaComponent,
-    DescricaoReduzida
+    DescricaoReduzida,
+    OrdemCompraComponent,
+    OrdemCompraSucessoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    FormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent]

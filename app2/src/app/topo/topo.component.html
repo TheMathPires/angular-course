@@ -1,34 +1,38 @@
-<div class="fixed-top bg-white">
-  <nav class="navbar navbar-light">
+<div class="fixed-top">
+  <nav class="navbar navbar-light bg-faded">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <a routerLink="" class="navbar-brand">
-            <img class="img-fluid" src="/assets/logo.png" />
+          <a class="navbar-brand" routerLink="/">
+            <img src="../../assets/logo.png" />
           </a>
         </div>
-        <div class="col-md-6 position-relative">
+        <!-- #termoDaPesquisa é uma variável sendo passada
+        como parâmetro para função pesquisa em keyup -->
+        <div class="col-md-6">
+
           <input
-            type="text"
-            class="form-control"
-            placeholder="Pesquise por ofertas..."
-            #termoDaPesquisa
-            (keyup)="pesquisa(termoDaPesquisa.value)"
-          />
-          <ul class="list-group position-absolute">
+          type="text"
+          class="form-control"
+          placeholder="Pesquise por ofertas"
+          #termoDaPesquisa
+          (keyup)="pesquisa(termoDaPesquisa.value)"
+          >
+
+          <ul class="list-group" style="position: absolute; z-index: 999">
             <li class="list-group-item" *ngFor="let oferta of ofertas | async">
-              <a [routerLink]="['/oferta', oferta.id]" (click)="limpaPesquisa">
-              {{ oferta.titulo | descricaoReduzida:15:0 }}
-             </a>
+              <a [routerLink] = "['/oferta', oferta.id]" (click)="limpaPesquisa()">
+                {{ oferta.titulo | descricaoReduzida: 15:0 }}
+              </a>
             </li>
           </ul>
         </div>
         <div class="col-md-2">
-          <a href="#">
-            <img class="img-fluid" src="/assets/carrinho.png" />
-          </a>
+          <a a href="#"><img src="../../assets/carrinho.png" /></a>
         </div>
       </div>
+
+
     </div>
   </nav>
 
@@ -36,10 +40,10 @@
     <div class="container">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" [routerLink]="['/restaurantes']" routerLinkActive="active">Restaurantes</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/restaurantes">Restaurantes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/diversao">Diversão</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/diversao">Diversão</a>
         </li>
       </ul>
     </div>
@@ -47,5 +51,5 @@
 </div>
 
 <div class="banner">
-  <img src="/assets/banners/img_1.jpg" />
+  <img src="../../assets/banners/img_1.jpg" />
 </div>
