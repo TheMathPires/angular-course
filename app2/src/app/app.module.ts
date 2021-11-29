@@ -4,7 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import ptBr from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
-import { FormsModule } from '@angular/forms'
+//import { FormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
 
 registerLocaleData(ptBr)
 
@@ -46,7 +47,7 @@ import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES),
-    FormsModule
+    ReactiveFormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent]
