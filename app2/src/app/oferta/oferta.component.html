@@ -1,14 +1,6 @@
 <div class="container">
   <div class="oferta" *ngIf="oferta != undefined">
 
-    <!--<div class="row">
-      <div class="col">
-        <a [routerLink]="['/oferta', 1]">Oferta 1</a>
-        <a [routerLink]="['/oferta', 3]">Oferta 3</a>
-        <a [routerLink]="['/oferta', 6]">Oferta 6</a>
-      </div>
-    </div>-->
-
     <div class="row">
       <div class="col">
         <h4>{{ oferta.descricao_oferta }}</h4>
@@ -42,7 +34,11 @@
 
         <div class="row">
           <div class="col text-center">
-            <button type="button" class="btn btn-warning btn-lg">Adicionar ao carrinho</button>
+            <button
+              type="button"
+              class="btn btn-warning btn-lg"
+              (click)="adicionarItemCarrinho(oferta)"
+            >Adicionar ao carrinho</button>
           </div>
         </div>
 

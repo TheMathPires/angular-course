@@ -187,242 +187,85 @@
   ],
   "pedidos": [
     {
-      "endereco": "123123",
-      "numero": "13123",
-      "complemento": "12312",
+      "endereco": "Rua x",
+      "numero": "123",
+      "complemento": "1",
       "formaPagamento": "dinheiro",
       "id": 1
     },
     {
-      "endereco": "Rua 10",
-      "numero": "3",
-      "complemento": "x",
+      "endereco": "rara",
+      "numero": "123",
+      "complemento": "q",
       "formaPagamento": "dinheiro",
       "id": 2
     },
     {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
+      "endereco": "asdasd",
+      "numero": "123",
+      "complemento": "adas",
       "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "image": "/assets/ofertas/1/img1.jpg",
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 1
+        },
+        {
+          "id": 4,
+          "image": "/assets/ofertas/4/img1.jpg",
+          "titulo": "Estância das águas",
+          "descricao_oferta": "Diversão garantida com piscinas, trilhas e muito mais.",
+          "valor": 31.9,
+          "quantidade": 2
+        }
+      ],
       "id": 3
     },
     {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
+      "endereco": "asdasd",
+      "numero": "asda",
+      "complemento": "asda",
       "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "image": "/assets/ofertas/1/img1.jpg",
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 3
+        },
+        {
+          "id": 4,
+          "image": "/assets/ofertas/4/img1.jpg",
+          "titulo": "Estância das águas",
+          "descricao_oferta": "Diversão garantida com piscinas, trilhas e muito mais.",
+          "valor": 31.9,
+          "quantidade": 2
+        }
+      ],
       "id": 4
     },
     {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 5
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 6
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 7
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 8
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 9
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 10
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 11
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 12
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 13
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 14
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 15
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 16
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 17
-    },
-    {
-      "endereco": "13123",
-      "numero": "1312",
-      "complemento": "12312",
-      "formaPagamento": "dinheiro",
-      "id": 18
-    },
-    {
-      "endereco": "dfds",
-      "numero": "11",
-      "complemento": "2",
-      "formaPagamento": "dinheiro",
-      "id": 19
-    },
-    {
-      "endereco": "adsad",
-      "numero": "12313",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 20
-    },
-    {
-      "endereco": "adsad",
-      "numero": "12313",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 21
-    },
-    {
-      "endereco": "adsad",
-      "numero": "12313",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 22
-    },
-    {
-      "endereco": "adsad",
-      "numero": "12313",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 23
-    },
-    {
-      "endereco": "adsad",
-      "numero": "12313",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 24
-    },
-    {
-      "endereco": "Rua Teste",
-      "numero": "123",
-      "complemento": "c",
-      "formaPagamento": "dinheiro",
-      "id": 25
-    },
-    {
-      "endereco": "Rua Teste",
-      "numero": "123",
-      "complemento": "c",
-      "formaPagamento": "dinheiro",
-      "id": 26
-    },
-    {
-      "endereco": "Ruaa",
-      "numero": "1213",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 27
-    },
-    {
-      "endereco": "Ruaa",
-      "numero": "1213",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 28
-    },
-    {
-      "endereco": "Ruaa",
-      "numero": "1213",
-      "complemento": "123",
-      "formaPagamento": "dinheiro",
-      "id": 29
-    },
-    {
-      "endereco": "adsdasd",
-      "numero": "12312",
-      "complemento": "adasd",
-      "formaPagamento": "dinheiro",
-      "id": 30
-    },
-    {
-      "endereco": "Rua X",
-      "numero": "123",
-      "complemento": "1",
-      "formaPagamento": "dinheiro",
-      "id": 31
-    },
-    {
-      "endereco": "Rua 123",
-      "numero": "12",
-      "complemento": "1",
-      "formaPagamento": "",
-      "id": 32
-    },
-    {
-      "endereco": "Rua 123",
-      "numero": "1",
-      "complemento": "2",
-      "formaPagamento": "dinheiro",
-      "id": 33
-    },
-    {
-      "endereco": "rqwq",
+      "endereco": "asdas",
       "numero": "1231",
-      "complemento": "wqeq",
+      "complemento": "12312",
       "formaPagamento": "dinheiro",
-      "id": 34
+      "itens": [
+        {
+          "id": 1,
+          "image": "/assets/ofertas/1/img1.jpg",
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 4
+        }
+      ],
+      "id": 5
     }
   ]
 }
