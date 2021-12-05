@@ -1,17 +1,16 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "2081c3ae-067b-4b82-b932-5fe9512d6212"
+    "analytics": "ccb12029-d6bf-4eb0-8548-53bf37f23cdd"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app": {
+    "app3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass",
-          "skipTests": true
+          "style": "sass"
         },
         "@schematics/angular:application": {
           "strict": true
@@ -24,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app",
+            "outputPath": "dist/app3",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -35,17 +34,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.sass"
             ],
-            "scripts": [
-              "./node_modules/tether/dist/js/tether.min.js",
-              "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ],
-            "allowedCommonJsDependencies": [
-              "lodash"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -70,8 +61,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": true,
-              "aot": true,
+              "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
@@ -85,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "app:build:production"
+              "browserTarget": "app3:build:production"
             },
             "development": {
-              "browserTarget": "app:build:development"
+              "browserTarget": "app3:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -96,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app:build"
+            "browserTarget": "app3:build"
           }
         },
         "test": {
@@ -120,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "app"
+  "defaultProject": "app3"
 }
