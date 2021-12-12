@@ -7,6 +7,7 @@ import 'firebase/compat/auth';
 @Injectable()
 export class Autenticacao {
   public token_id!: string | null | undefined
+  public errorMessage!: string
 
   constructor(private router: Router) {}
 
@@ -29,9 +30,8 @@ export class Autenticacao {
 
   public autenticar(email: string, senha: string): void {
 
-
     firebase.auth().signInWithEmailAndPassword(email, senha)
-      .then((resposta: any) => {
+      .then(() => {
         firebase.auth().currentUser?.getIdToken()
           .then((idToken: string) => {
             this.token_id = idToken
@@ -39,7 +39,9 @@ export class Autenticacao {
             this.router.navigate(['/home'])
           })
       })
-      .catch((error: Error) => console.log(error))
+      .catch((error: Error) => {
+        this.errorMessage = error.toString()
+      })
 
   }
 
@@ -57,6 +59,7 @@ export class Autenticacao {
   }
 
   public sair(): void {
+
     firebase.auth().signOut()
       .then(() => {
         localStorage.removeItem('idToken')
@@ -64,5 +67,6 @@ export class Autenticacao {
         this.router.navigate(['/'])
       })
     localStorage.removeItem('idToken')
+
   }
 }

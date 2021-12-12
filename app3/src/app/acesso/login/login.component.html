@@ -9,6 +9,7 @@
           class="form-control"
           placeholder="E-mail"
           formControlName="email"
+          (keyup)="isValidCredential()"
         >
       </div>
       <div class="form-group">
@@ -17,13 +18,16 @@
           class="form-control"
           placeholder="Senha"
           formControlName="senha"
+          (keyup)="isValidCredential()"
         >
       </div>
-      <button type="submit" class="btn btn-primary btn-sm btn-block">Entrar</button>
+      <button type="submit" class="btn btn-primary btn-sm btn-block" [disabled]="isValidLogin">Entrar</button>
     </form>
     <hr />
 
-    <p class="small text-danger text-center">O nome de usuário inserido não pertence a uma conta. Verifique seu nome de usuário e tente novamente.</p>
+    <div *ngIf="loginFail">
+      <p class="small text-danger text-center">{{ errorMessage }}</p>
+    </div>
 
   </div>
 </div>
